@@ -1,7 +1,7 @@
-FROM centos:latest
+FROM ubuntu:latest
 
-RUN yum -y install httpd
-
+RUN apt-get update -y
+RUN apt-get install apache2 -y
 COPY index.html /var/www/html/
 
 CMD [“/usr/sbin/httpd”, “-D”, “FOREGROUND”]
