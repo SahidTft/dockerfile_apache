@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web1:
+    image: 692851696394.dkr.ecr.us-east-1.amazonaws.com/repo1:latest
+    ports:
+      - 80:80
